@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
+/* General Layout */
+.App {
+  max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Title and Subtitle */
+.app-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Puppy List */
+.puppy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 
-.card {
-  padding: 2em;
+.puppy-name {
+  padding: 0.5rem 1rem;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.puppy-name:hover {
+  background-color: #646cff;
+}
+
+/* Featured Puppy Section */
+.featured-puppy {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-puppy h2 {
+  margin-top: 0;
+  color: #213547;
+}
+
+.featured-puppy ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.featured-puppy li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
 }
